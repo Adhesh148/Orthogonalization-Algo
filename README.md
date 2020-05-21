@@ -15,6 +15,8 @@ Refer to the following to get a better understading of orthogonal vectors:
 
 ### Why Orthogonalize ?
 
+Orthogonality also makes a difference in how statistical tests are run. Orthogonal models only have one way to estimate model parameters and to run statistical tests. Non-orthogonal models have several ways to do this, which means that the results can be more complicated to interpret. In general, more correlation between independent variables means that you should interpret result more cautiously.
+
 ### What are the common methods of orthogonalization ?
 * Classical Graham Scmidt (CGS)
 * Modified Graham Scmidt (MGS)
@@ -22,12 +24,4 @@ Refer to the following to get a better understading of orthogonal vectors:
 * MGS with Reorthogonaliztion
 
 ### Which method works better ?
-Keeping loss of orthogonality over each iteration as parameter to define the quality of an algorithm it is quite evident from the plots that the MGS method with reorthogonaliztion works the best (very closely followed by CGS with orthogonalization) where as the Classical Graham Scmidt suffers from great loss of orthogonality.
-
-![Loss of orthogonalization](Loss of orthogonality.png)
-
-
-
-
-
-
+Keeping loss of orthogonality over each iteration as parameter to define the quality of an algorithm it is quite evident from the plots that the MGS method with reorthogonaliztion works the best (very closely followed by CGS with orthogonalization) where as the Classical Graham Scmidt suffers from great loss of orthogonality. We quite comfortably say that MGS with reorthogonaliztion is a better algorithm.
